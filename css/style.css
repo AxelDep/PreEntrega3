@@ -7,8 +7,14 @@
 body {
   background: #17181c;
   color: #f2f2f6;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   min-height: 100vh;
+}
+
+.logo-header {
+  height: 40px;
+  transform: scale(6); 
+  transform-origin: left center; 
 }
 
 .navbar .navbar-brand,
@@ -40,7 +46,8 @@ body {
 
 #noticiasCarousel .card-img-top {
   object-fit: cover;
-  height: 230px;
+  width: 100%;
+  height: 300px; 
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -59,6 +66,16 @@ body {
   #noticiasCarousel .card-text {
     text-align: center;
   }
-}
 
+  #noticiasCarousel .card {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #noticiasCarousel img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
 

@@ -14,19 +14,23 @@ body {
 .logo-header {
   height: 40px;
   transform: scale(6); 
-  transform-origin: left center; 
+  transform-origin: left center;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
   color: #fff;
-  transition: color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.navbar .nav-link.active,
+/* Hover y activo */
 .navbar .nav-link:hover,
+.navbar .nav-link.active,
 .navbar .navbar-brand:hover {
   color: #ffd600;
+  background-color: rgba(255, 214, 0, 0.1);
 }
 
 .navbar-toggler {
@@ -60,6 +64,14 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   box-shadow: 0 2px 8px rgba(255,193,7,0.12);
+}
+
+@media (max-width: 991.98px) {
+  .logo-header {
+  height: 40px;
+  transform: scale(3.5); 
+  transform-origin: left center;
+  }
 }
 
 @media (max-width: 767.98px) {
